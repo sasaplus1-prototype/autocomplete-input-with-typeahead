@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>autocomplete input with Typeahead</title>
+    <style>
+      .tt-input {
+        /*border: 1px solid #999999;*/
+      }
+
+      .tt-menu {
+        background-color: #ffffff;
+        border-radius: 3px;
+        border: 1px solid #999999;
+        padding: 3px;
+        width: 100%;
+      }
+
+      .tt-dataset.tt-dataset-states {
+      }
+
+      .tt-suggestion.tt-selectable {
+      }
+
+      .tt-suggestion.tt-selectable.tt-cursor {
+        background-color: #cccccc;
+        color: #666666;
+      }
+
+      .tt-highlight {
+        background-color: #ccccff;
+      }
+    </style>
+  </head>
+  <body>
+    <label>
+      <input id="js-index-of" type="text" size="60">
+    </label>
+
+    <input id="js-open-suggests-1" type="button" value="open suggests">
+    <input id="js-close-suggests-1" type="button" value="close suggests">
+
+    <hr>
+
+    <label>
+      <input id="js-bloodhound" type="text" size="60">
+    </label>
+
+    <input id="js-open-suggests-2" type="button" value="open suggests">
+    <input id="js-close-suggests-2" type="button" value="close suggests">
+
+    <script src="jquery-3.2.1.min.js"></script>
+    <script src="typeahead.bundle.min.js"></script>
+    <script src="index.js"></script>
+  </body>
+</html>
